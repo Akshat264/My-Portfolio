@@ -9,6 +9,7 @@ import NavBar from './Components/navbar';
 import About from './Components/about';
 import SocialIcons from './Components/Social_icons';
 import ProjectSection from './Components/Projects';
+import Gallery from './Components/Gallery';
 function App() {
   const [count, setCount] = useState(0)
 
@@ -19,6 +20,7 @@ function App() {
       <SocialIcons/>
       <About/>
       <ProjectSection/>
+      <Gallery/>
     </>
   )
 }
