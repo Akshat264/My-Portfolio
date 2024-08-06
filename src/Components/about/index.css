@@ -1,0 +1,113 @@
+/* About Section Styling */
+.about-section {
+    padding: 2rem 1rem;
+  background-color: #f9f9f9;
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px); /* Start position off-screen */
+  transition: opacity 1s ease-out, transform 1s ease-out; /* Transition properties */
+  }
+  .about-section.visible {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move into view */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .about-content {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    gap: 10vw;
+    text-align: center;
+  }
+  .about-text{
+    max-width: 60%;
+  }
+  .about-text h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .about-text p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .about-skills {
+    margin-top: 2rem;
+  }
+  
+  .about-skills h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .about-skills ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .about-skills li {
+    font-size: 1rem;
+    color: #555;
+    background: #fff;
+    border: 1px solid #ddd;
+    min-width: 20vw;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    transition: background-color 0.4s ease;
+  }
+  .about-skills li:hover{
+    color: white;
+    background-color: #333;
+  }
+  .skill-item {
+    font-size: 1rem;
+    color: #555;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    cursor: pointer;
+  }
+  
+  .skill-item.hovered {
+    background-color: #333; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-section{
+        padding: 4rem 0;
+    }
+    .about-content {
+      flex-direction: column;
+      gap: 3vh;
+      align-items: center;
+    }
+    .about-text, .about-skills {
+      width: 100%;
+    }
+    .about-text{
+        max-width: 100%;
+    }
+    .about-text p, .about-skills li {
+      font-size: 0.9rem;
+    }
+  }
+  

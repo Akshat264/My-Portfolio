@@ -1,0 +1,156 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Navbar container */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  /* Logo */
+  .logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Menu Icon for mobile */
+  .menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 20;
+    transition: transform 0.3s ease;
+  }
+  
+  .menu-icon div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  /* Mobile menu icon transition */
+  .menu-icon.open .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .menu-icon.open .line2 {
+    opacity: 0;
+  }
+  
+  .menu-icon.open .line3 {
+    transform: rotate(45deg) translate(-10px, -10px);
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 1.5rem;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover effect on navigation links */
+  .nav-links a:hover {
+    color: #ff6347; /* Tomato color */
+  }
+  /* Download button */
+.download-btn {
+    background-color: #ff6347; /* Tomato color */
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .download-btn:hover {
+    background-color: #333; /* Darker tomato color */
+    border: solid 2px #ff6347;
+  }
+  
+  .download-icon {
+    margin-right: 0.5rem;
+  }
+  .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+  }
+  .logo img{
+    width: 4vw;
+    border-radius: 50%;
+  }
+  /* Responsive styles */
+ /* Responsive styles */
+ @media (max-width: 425px){
+    .logo img{
+        width: 6vw;
+    }
+    .logo{
+        font-size: 6vw;
+    }
+ }
+@media (max-width: 768px) {
+    .menu-icon {
+      display: flex;
+    }
+    .logo{
+        font-size: 4vw;
+    }
+  
+    .nav-links {
+      position: fixed;
+      top: 60px;
+      right: 0;
+      height: calc(100vh - 60px);
+      background-color: rgba(51,51,51,0.95);
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+      width: 70%;
+      max-width: 300px;
+      padding-top: 1rem;
+      overflow-y: auto; /* Allows scrolling if links overflow */
+      z-index: 15;
+      box-shadow: -4px 0 6px rgba(0,0,0,0.2);
+    }
+  
+    .nav-links.open {
+      transform: translateX(0);
+    }
+  
+    .nav-links li {
+      margin: 1rem 0;
+    }
+  }
+  

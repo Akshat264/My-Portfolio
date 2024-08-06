@@ -1,0 +1,15 @@
+.social_icons_ab{
+    display: flex;
+    justify-content: center;
+    gap: 4vw;
+    padding: 4vh 0 4vh 0;
+}
+.custom-color-hover{
+    transition: transform 0.3s ease-in-out;
+    color: #333;
+}
+.custom-color-hover:hover{
+    color: #ff6347;
+    transform: scale(1.2);
+    cursor: pointer;
+}
