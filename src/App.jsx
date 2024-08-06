@@ -10,6 +10,8 @@ import About from './Components/about';
 import SocialIcons from './Components/Social_icons';
 import ProjectSection from './Components/Projects';
 import Gallery from './Components/Gallery';
+import Achievements from './Components/Achievements';
+import Footer from './Components/Footer';
 function App() {
   const [count, setCount] = useState(0)
 
@@ -21,6 +23,8 @@ function App() {
       <About/>
       <ProjectSection/>
       <Gallery/>
+      <Achievements/>
+      <Footer/>
     </>
   )
 }

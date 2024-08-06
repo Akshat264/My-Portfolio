@@ -1,0 +1,83 @@
+.achievements-slider_new {
+    width: 100%;
+    overflow: hidden;
+    padding: 4vh 5vw;
+    background-color: #333;
+    padding-bottom: 7vh;
+  }
+  .achievements-slider_new h1{
+    color: white;
+    text-align: center;
+    font-size: 2.5svw;
+    margin-bottom: 2vh;
+  }
+  .carousel-item_new {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item_new img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item_new.slick-center img {
+    transform: scale(1.2); /* Center image larger */
+  }
+  
+  .carousel-item_new.slick-slide:not(.slick-center) img {
+    transform: scale(0.8); /* Adjacent images smaller */
+    opacity: 0.7;
+  }
+  
+  .overlay_new {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .carousel-item_new:hover .overlay_new {
+    opacity: 1;
+  }
+  
+  .achievement-title_new {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+  .achievement-description_new {
+    margin: 0;
+  }
+  @media (max-width: 425px) {
+    .achievements-slider_new h1{
+        font-size: 7vw;
+    }
+    .carousel-item_new {
+      flex-direction: column;
+    }
+  
+    .carousel-image_new {
+      width: 100%;
+    }
+  
+    .carousel-overlay_new {
+      position: static;
+      background: rgba(0, 0, 0, 0.7);
+    }
+  
+    .carousel-title_new,
+    .carousel-description_new {
+      padding: 10px;
+    }
+  }

@@ -27,7 +27,7 @@ const NavBar = () => {
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#experience">Achievements</a></li>
+        <li><a href="#certificates">Certificates</a></li>
       </ul>
     </nav>
   );
