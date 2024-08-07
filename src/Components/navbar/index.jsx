@@ -19,7 +19,7 @@ const NavBar = () => {
       </div>
       <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
       <li>
-          <a href="../../public/resume.pdf" className="download-btn" download>
+          <a href="/resume.pdf" className="download-btn" download>
             <FaDownload className="download-icon" /> Download Resume
           </a>
         </li>
