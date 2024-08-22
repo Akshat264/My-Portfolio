@@ -6,6 +6,7 @@ import img2 from "./assets/img2.png";
 import img3 from "./assets/img3.png";
 import img4 from "./assets/img4.png";
 import img5 from "./assets/img5.png";
+import img6 from "./assets/img6.png";
 const achievements = [
   {
     id: 1,
@@ -37,6 +38,12 @@ const achievements = [
     description: 'Web Development learning plan Certificate',
     image: img4, // Replace with your image path
   },
+  {
+    id: 6,
+    title: 'Summer Internship',
+    description: 'Frontend Internship Completion Certificate',
+    image: img6, // Replace with your image path
+  }
   // Add more achievements as needed
 ];
 
