@@ -10,6 +10,9 @@ import project2_3 from "./assets/Screenshot (9).png";
 import project3_1 from "./assets/Screenshot (341).png";
 import project3_2 from "./assets/Screenshot (343).png";
 import project3_3 from "./assets/Screenshot (344).png";
+import project4_1 from "./assets/Screenshot(345).png";
+import project4_2 from "./assets/Screenshot(346).png";
+import project4_3 from "./assets/Screenshot(347).png";
 const projects = [
   {
     title: 'ShelterSpot',
@@ -22,8 +25,18 @@ const projects = [
     codeLink: 'https://github.com/Akshat264/Edu-Craft'
   },
   {
+    title: 'Realtime Chat Application',
+    description: 'Developed a real-time chat application using React, Node.js, MongoDB, and Socket.io, enabling secure and seamless communication between users. Implemented token-based authentication for secure login and registration. Designed and integrated user profile management features, including profile creation, editing, and picture uploads for personalized user experiences. Built real-time private chat functionality. Created real-time group chat rooms, enabling users to join or create chat rooms for collaborative discussions, with dynamic switching between private and group chats',
+    images: [
+      project4_1,
+      project4_2,
+      project4_3
+    ],
+    codeLink: 'https://github.com/Akshat264/PRODIGY_FS_04'
+  },
+  {
     title: 'EduCraft',
-    description: 'Developed a web-based quiz maker application using React.js, Node.js, Express.js, and MongoDB. Sole developer responsible for end-to-end development, including system design, database modeling, backend and frontend implementation, and testing. Technologies used: React.js, Node.js, Express.js, MongoDB, EJS templates, CSS.',
+    description: 'Developed a web-based quiz maker application using React.js, Node.js, Express.js, and MongoDB. Sole developer responsible for end-to-end development, including system design, database modeling, backend and frontend implementation, and testing. Technologies used: React.js, Node.js, Express.js, MongoDB, EJS templates, CSS. It allows teachers to generate quality content and assessments to examine the students. This involves complete authentication of teachers and students.',
     images: [
       project2_1,
       project2_2,
@@ -65,8 +78,9 @@ const ProjectSection = () => {
   };
 
   return (
+    <>
+    <h1 className='showcase'>Showcase of My Work</h1>
     <div className="project-section" id='projects'>
-        <h1>Showcase of My Work</h1>
       {projects.map((project, index) => (
         <div key={index} className="project">
           <h3>{project.title}</h3>
@@ -84,6 +98,7 @@ const ProjectSection = () => {
         </div>
       ))}
     </div>
+    </>
   );
 };
 
